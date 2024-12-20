@@ -1,0 +1,96 @@
+body{
+  background-color: rgb(145, 0, 0)  ;
+}
+.app {
+  font-family: Arial, sans-serif;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 600px;
+  border-color: aliceblue;
+  text-align: center;
+  margin-left: 80%;
+}
+
+h1 {
+  color: #ffffff;
+}
+/* Estilos generales para la aplicación */
+.App {
+  background-image: url('./assets/imagenes2/software.jpeg'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* La imagen se mantiene fija al hacer scroll */
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Header principal */
+header {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos */
+h1, h2 {
+  margin: 10px 0;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+/* Listas ordenadas y desordenadas */
+ol, ul {
+  text-align: left;
+  margin: 0 auto;
+  padding: 10px 20px;
+  max-width: 600px;
+}
+
+/* Imágenes generales */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Clases específicas para imágenes */
+.yo {
+  height: 40vmin;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.futbol, .ecua, .basq {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.futbol:hover, .ecua:hover, .basq:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .App {
+    font-size: calc(8px + 2vmin);
+  }
+
+  header {
+    width: 95%;
+  }
+
+  img {
+    height: 30vmin;
+  }
+}
